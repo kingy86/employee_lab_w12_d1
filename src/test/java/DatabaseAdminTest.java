@@ -11,7 +11,7 @@ public class DatabaseAdminTest {
 
     @Before
     public void before(){
-        databaseAdmin = new DatabaseAdmin("Jimmy Jones", 735421, 35000);
+        databaseAdmin = new DatabaseAdmin("Jimmy Jones", 735421, 35000.00);
     }
 
     @Test
@@ -24,6 +24,9 @@ public class DatabaseAdminTest {
         assertEquals(735421, databaseAdmin.getNationalInsurance());
     }
 
-    
+    @Test
+    public void getSalary(){
+        assertEquals(35000.00, 35000.00, databaseAdmin.getSalary());
+    }
 
 }

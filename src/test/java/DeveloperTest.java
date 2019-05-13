@@ -10,7 +10,7 @@ public class DeveloperTest {
 
     @Before
     public void before(){
-        developer = new Developer("Grant Rutherford", 345677, 45000);
+        developer = new Developer("Grant Rutherford", 345677, 45000.00);
     }
 
     @Test
